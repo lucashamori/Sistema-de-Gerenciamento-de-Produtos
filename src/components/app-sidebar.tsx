@@ -75,7 +75,11 @@ const data = {
       items: [
         {
           title: "Cadastrar Clientes",
-          url: "clientes",
+          url: "cadastroClientes",
+        },
+        {
+          title: "Exibir Clientes",
+          url: "cadastroClientes",
         },
       ],
     },
