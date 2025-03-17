@@ -6,7 +6,7 @@ export default function Home() {
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         
       <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
-        Olá Mundo!
+        Alugueis!
       </h1>
         
       </main>
