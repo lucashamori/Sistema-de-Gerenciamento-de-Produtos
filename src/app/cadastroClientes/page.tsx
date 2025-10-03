@@ -40,7 +40,7 @@ export default function CadastrarClientes() {
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="hidden md:block" />
                 <BreadcrumbItem>
-                  <BreadcrumbPage>Vendas</BreadcrumbPage>
+                  <BreadcrumbPage>Cadastrar clientes</BreadcrumbPage>
                 </BreadcrumbItem>
               </BreadcrumbList>
             </Breadcrumb>

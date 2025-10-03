@@ -29,7 +29,7 @@ export function Formulario({
               <Input
                 id="nome"
                 type="name"
-                placeholder="Adilson Fernando"
+                placeholder="Lucas Mori"
                 required
               />
             </div>
@@ -50,6 +50,16 @@ export function Formulario({
                 id="endereco"
                 type="local"
                 placeholder="Rua Adilson dos Anjos 393"
+                required
+              />
+
+            </div>
+             <div className="grid gap-2">
+              <Label htmlFor="endereco">Telefone</Label>
+              <Input
+                id="Telefone"
+                type="telefone"
+                placeholder="35992445674"
                 required
               />
             </div>
