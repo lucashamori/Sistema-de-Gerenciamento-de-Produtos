@@ -1,4 +1,4 @@
-import { GalleryVerticalEnd, House } from "lucide-react"
+import { House } from "lucide-react"
 
 import { LoginForm } from "@/components/login-form"
 
