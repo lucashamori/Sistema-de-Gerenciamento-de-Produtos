@@ -8,11 +8,13 @@ import {
   Command,
   Frame,
   House,
+  Factory,
   Users,
   GalleryVerticalEnd,
   LayoutDashboard,
   Map,
   PieChart,
+  Package,
   Settings2,
   SquareTerminal,
 } from "lucide-react"
@@ -37,20 +39,11 @@ const data = {
   },
   teams: [
     {
-      name: "Léo",
-      logo: GalleryVerticalEnd,
-      plan: "Conexões Imobiliárias",
-    },
-    {
       name: "Lucas Mori",
-      logo: AudioWaveform,
-      plan: "Conexões Imobiliárias",
+      logo: GalleryVerticalEnd,
+      plan: "Sistema de Gerenciamento de Produtos",
     },
-    {
-      name: "Marcelo",
-      logo: Command,
-      plan: "Conexões Imobiliárias",
-    },
+    
   ],
   navMain: [
     
@@ -70,7 +63,7 @@ const data = {
     {
       title: "Clientes",
       url: "clientes",
-      icon: LayoutDashboard,
+      icon: Users,
       isActive: true,
       items: [
         {
@@ -85,25 +78,29 @@ const data = {
     },
 
     {
-      title: "Alugueis",
+      title: "Empresas",
       url: "#",
-      icon: House,
+      icon: Factory,
       isActive: true,
       items: [
         {
-          title: "Clientes",
+          title: "Cadastrar Empresas",
           url: "#",
+        },
+        {
+          title: "Exibir Empresas",
+          url: "cadastroEmpresas",
         },
         
       ],
     },
     {
-      title: "Vendas",
+      title: "Produtos",
       url: "#",
-      icon: Users,
+      icon: Package,
       items: [
         {
-          title: "Imoveis",
+          title: "Produtos",
           url: "vendas",
         },
         

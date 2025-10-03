@@ -35,7 +35,7 @@ export default function CadastrarClientes() {
               <BreadcrumbList>
                 <BreadcrumbItem className="hidden md:block">
                   <BreadcrumbLink href="dashboard">
-                    Léo Conexões Imobiliárias
+                    Sistema de Gerenciamento de Pedidos
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="hidden md:block" />

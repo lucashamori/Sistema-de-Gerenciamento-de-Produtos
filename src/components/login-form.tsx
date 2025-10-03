@@ -41,7 +41,7 @@ export function LoginForm({
       
       </div>
       <div className="text-center text-sm">
-        Desenvolvido por 4bit{" "}
+        Desenvolvido por Lucas Mori{" "}
       
       </div>
     </form>

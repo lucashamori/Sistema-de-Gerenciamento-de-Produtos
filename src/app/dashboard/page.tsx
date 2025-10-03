@@ -14,7 +14,7 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/ui/sidebar"
-import { DollarSign, House, Users } from "lucide-react"
+import {  House, Users, Package, PackageOpen } from "lucide-react"
 
 export default function Page() {
   return (
@@ -32,7 +32,7 @@ export default function Page() {
               <BreadcrumbList>
                 <BreadcrumbItem className="hidden md:block">
                   <BreadcrumbLink href="#">
-                    Léo Conexões Imobiliárias
+                    Sistema de Gerenciamento de Pedidos
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="hidden md:block" />
@@ -52,7 +52,7 @@ export default function Page() {
                   <Users className="ml-auto w-4 h-4" />
                 </CardTitle>
                 <CardDescription>
-                  Lista de clientes cadastrados na imobiliária.
+                  Lista de clientes cadastrados no sistema.
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -64,7 +64,7 @@ export default function Page() {
               <CardHeader>
                 <CardTitle className="flex items-center">
                   Vendas
-                  <House className="ml-auto w-4 h-4" />
+                  <PackageOpen className="ml-auto w-4 h-4" />
                 </CardTitle>
                 <CardDescription>
                   Vendas nos últimos 30 dias.
@@ -78,11 +78,11 @@ export default function Page() {
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center">
-                  Alugueis
-                  <Users className="ml-auto w-4 h-4" />
+                  Produtos
+                  <Package className="ml-auto w-4 h-4" />
                 </CardTitle>
                 <CardDescription>
-                  Lista de valores dos alugueis.
+                  Lista de valores dos produtos em estoque.
                 </CardDescription>
               </CardHeader>
               <CardContent>
