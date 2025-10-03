@@ -14,9 +14,40 @@ import {
   SidebarProvider,
   SidebarTrigger,
 } from "@/components/ui/sidebar"
-import {  House, Users, Package, PackageOpen } from "lucide-react"
+import { Users, Package, PackageOpen } from "lucide-react"
+import { DataTable } from "@/app/dashboard/data-table"
+import { columns, Payment } from "@/app/dashboard/columns"
 
-export default function Page() {
+
+async function getData(): Promise<Payment[]> {
+  // Fetch data from your API here.
+  return [
+    {
+      nome:" Lucas Mori",
+      cpf: 11627467696,
+      telefone: 35992445675,
+      pedidos: 5,
+    },
+    {
+      nome:" Adilson",
+      cpf: 11667766699,
+      telefone: 35992445675,
+      pedidos: 30,
+    },
+    {
+      nome:" Lucas Mori",
+      cpf: 11223344556,
+      telefone: 35992445675,
+      pedidos: 5,
+    },
+    // ... adicione mais dados de exemplo se quiser
+  ]
+}
+
+// CORREÇÃO: A função Page foi marcada como 'async'
+export default async function Page() {
+    const data = await getData()
+
   return (
     <SidebarProvider>
       <AppSidebar />
@@ -45,7 +76,7 @@ export default function Page() {
         </header>
         <div className="flex flex-1 flex-col gap-4 p-4 pt-0">
           <div className="grid auto-rows-min gap-4 md:grid-cols-3">
-          <Card>
+            <Card>
               <CardHeader>
                 <CardTitle className="flex items-center">
                   Clientes
@@ -91,7 +122,11 @@ export default function Page() {
             </Card>
 
           </div>
-          <div className="min-h-[100vh] flex-1 rounded-xl bg-muted/50 md:min-h-min" />
+          {/* Ocultado o div com min-h-[100vh] para que a tabela seja visível abaixo */}
+          {/* <div className="min-h-[100vh] flex-1 rounded-xl bg-muted/50 md:min-h-min" /> */}
+          <div className="container mx-auto py-10">
+            <DataTable columns={columns} data={data} />
+          </div>
         </div>
       </SidebarInset>
     </SidebarProvider>
