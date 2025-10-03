@@ -19,7 +19,6 @@ export function Formulario({
               className="flex flex-col items-center gap-2 font-medium"
             >
               
-              <span className="sr-only">Léo Conexões Imobiliárias </span>
             </a>
             <h1 className="text-xl font-bold">Cadastro de Clientes</h1>
             

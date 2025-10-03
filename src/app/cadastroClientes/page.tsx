@@ -1,4 +1,4 @@
-import { Formulario } from "@/components/formulario"
+import { Formulario } from "@/components/formularioClientes"
 
 
 import { AppSidebar } from "@/components/app-sidebar"
